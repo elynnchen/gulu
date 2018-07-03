@@ -1,6 +1,6 @@
 <template>
     <button class="button" v-bind:class="{[`icon-${iconPosition}`]:true}">
-        <svg v-if="icon" class="icon"> <use v-bind:xlink:href="`#${icon}`"></use></svg>
+        <g-icon v-if="icon" :name="icon"></g-icon>
        <span class="tx"><slot></slot></span>
     </button>
 </template>
@@ -14,13 +14,7 @@
                 type:String,
                 default:'left',
                 validator(value){
-                    if(value!=='left'&& value=='right'){
-                        return false
-                    }
-                    else {
-                        return true
-                    }
-
+                    return !(value !== 'left' && value !== 'right');
                 }/*用户给你的值 ,属性的检查器*/
             }
         }
