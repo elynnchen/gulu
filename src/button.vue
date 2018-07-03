@@ -1,6 +1,7 @@
 <template>
     <button class="button" v-bind:class="{[`icon-${iconPosition}`]:true}">
         <g-icon v-if="icon" :name="icon"></g-icon>
+        <g-icon class="loading" name="icon-loading"></g-icon>
        <span class="tx"><slot></slot></span>
     </button>
 </template>
@@ -23,7 +24,7 @@
 </script>
 
 <style>
-    .icon{width:16px;height:16px; vertical-align: top; fill: red;}
+
     .button{padding:5px 10px; color:#333;vertical-align: top;
         align-items: center;
         display: inline-flex; justify-content: center;}
@@ -31,5 +32,14 @@
     .button .icon{order: 1}
     .button.icon-right .tx{order: 1}
     .button.icon-right .icon{order: 2}
+    @keyframes loading {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+.loading{ animation: loading 2s infinite linear}
 
 </style>
