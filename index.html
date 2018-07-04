@@ -6,10 +6,10 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="">默认按钮</g-button>
+    <g-button icon="" :loading="loading1"  @click="loading1 = !loading1" >默认按钮</g-button>
     <!--用户传文字与Icon名，及ICon位置-->
-    <g-button icon="icon-enter"  icon-position="right">图标在右按钮</g-button>
-    <g-button icon="icon-search" icon-position="left">图标在左按钮</g-button>
+    <g-button icon="icon-enter" :loading="loading2"  icon-position="right"  @click="loading2 = !loading2">图标在右按钮</g-button>
+    <g-button icon="icon-search" :loading="loading3" icon-position="left"  @click="loading3 = !loading3">图标在左按钮</g-button>
     <g-icon name="icon-search"></g-icon>
 
 

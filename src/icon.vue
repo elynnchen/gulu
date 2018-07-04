@@ -9,6 +9,5 @@
 </script>
 
 <style>
-    .icon{width:16px;height:16px; vertical-align: top; fill: red;}
-
+    .icon{width:16px;height:16px; vertical-align: top; margin:0 2px; }
 </style>
