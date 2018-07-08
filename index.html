@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>index</title>
+    <style>
+        .gulu-box{clear: both;margin-top: 20px}
+    </style>
 </head>
 <body>
 <div id="app">
-    <g-button icon="" :loading="loading1"  @click="loading1 = !loading1" >默认按钮</g-button>
-    <!--用户传文字与Icon名，及ICon位置-->
-    <g-button icon="icon-enter" :loading="loading2"  icon-position="right"  @click="loading2 = !loading2">图标在右按钮</g-button>
-    <g-button icon="icon-search" :loading="loading3" icon-position="left"  @click="loading3 = !loading3">图标在左按钮</g-button>
-    <g-icon name="icon-search"></g-icon>
-    <p>组合</p>
-    <g-button-group>
-        <g-button icon="icon-return"  >上一页</g-button><g-button icon="icon-enter" icon-position="right"  >下一页</g-button>
-    </g-button-group>
+    <div class="gulu-box">
+        <p>按钮</p>
+        <g-button icon="" :loading="loading1"  @click="loading1 = !loading1" >默认按钮</g-button>
+        <!--用户传文字与Icon名，及ICon位置-->
+        <g-button icon="icon-enter" :loading="loading2"  icon-position="right"  @click="loading2 = !loading2">图标在右按钮</g-button>
+        <g-button icon="icon-search" :loading="loading3" icon-position="left"  @click="loading3 = !loading3">图标在左按钮</g-button>
+        <g-icon name="icon-search"></g-icon>
+        <p>组合</p>
+        <g-button-group>
+            <g-button icon="icon-return"  >上一页</g-button><g-button icon="icon-enter" icon-position="right"  >下一页</g-button>
+        </g-button-group>
+    </div>
 
+    <div class="gulu-box">
+        <p>输入框组件</p>
+        <g-input value="张三"></g-input>
+        <g-input value="李四" disabled></g-input>
+        <g-input value="错" error="名字不能少于两个字"></g-input>
+    </div>
 
 </div>
 <script src="./node_modules/vue/dist/vue.min.js"></script>

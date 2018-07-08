@@ -23,4 +23,5 @@
 }
 .g-button-group .button{border-radius:0; float:left; margin-left:-1px;}
 
+.g-button-group:after{ content: ''; clear: both; height: 1px; display: block;}
 </style>

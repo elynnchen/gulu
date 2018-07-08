@@ -8,6 +8,7 @@
 
 <script>
     export default {
+        name:'GuluButton',/*name的作用是帮助开发者使用开发者具时进行标签命名*/
    /*   props:['icon','iconPosition']*//*第一种props写法*/
         props:{
             icon:{},
