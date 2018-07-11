@@ -5,6 +5,7 @@
                    type="text"
                    class="g-input"
                    :class="{error}"
+                   @change="$emit('change','$event')"
 
             />
             <template v-if="error">
