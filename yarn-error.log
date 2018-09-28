@@ -1,20 +1,20 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe E:\js\gulu\node_modules\yarn\bin\yarn.js add vue-template-compiler -D
+  C:\Program Files\nodejs\node.exe D:\vue\gulu\node_modules\yarn\bin\yarn.js add vue-template-compiler -D
 
 PATH: 
-  E:\js\gulu\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\elynnchen\AppData\Local\GitHubDesktop\bin;d:\Program Files\Microsoft VS Code\bin;C:\Users\elynnchen\AppData\Roaming\npm
+  D:\vue\gulu\node_modules\.bin;C:\Users\Administrator\AppData\Local\Yarn\Data\link\node_modules\.bin;D:\vue\gulu\node_modules\.bin;C:\Users\Administrator\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\Administrator\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Lenovo\Fingerprint Manager Pro\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;C:\Users\Administrator\AppData\Roaming\npm
 
 Yarn version: 
-  1.7.0
+  1.10.1
 
 Node version: 
-  8.11.1
+  10.8.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'E:\js\gulu\node_modules\braces\node_modules\extend-shallow'
+  Error: EPERM: operation not permitted, unlink 'D:\vue\gulu\node_modules\deasync\bin\win32-x64-node-10\deasync.node'
 
 npm manifest: 
   {
@@ -25,7 +25,10 @@ npm manifest:
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": "git+https://github.com/elynnchen/gulu.git",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/elynnchen/gulu.git"
+    },
     "keywords": [
       "vue",
       "ui"
@@ -37,9 +40,9 @@ npm manifest:
     },
     "homepage": "https://github.com/elynnchen/gulu#readme",
     "dependencies": {
-      "vue": "^2.5.16",
+      "vue": "^2.5.17",
       "vue-hot-reload-api": "^2.3.0",
-      "yarn": "^1.7.0"
+      "yarn": "^1.10.1"
     },
     "devDependencies": {
       "@vue/component-compiler-utils": "^2.0.0",
@@ -2526,8 +2529,8 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.6.tgz#0101211baa70c4bca4a0f63f2206e97b7dfaf258"
   
   parcel-bundler@^1.9.3:
-    version "1.9.4"
-    resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.9.4.tgz#179da2e1660cdbf7278260f4e12f7eb94704d541"
+    version "1.9.3"
+    resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.9.3.tgz#48ec2eed5806b969fc5e56ce697d21aded7f80fe"
     dependencies:
       ansi-to-html "^0.6.4"
       babel-code-frame "^6.26.0"
@@ -3720,7 +3723,3 @@ Lockfile:
   yallist@^3.0.0, yallist@^3.0.2:
     version "3.0.2"
     resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.2.tgz#8452b4bb7e83c7c188d8041c1a837c773d6d8bb9"
-  
-  yarn@^1.7.0:
-    version "1.7.0"
-    resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.7.0.tgz#0076b9fde6010e01950526a609bc53bc175ef925"

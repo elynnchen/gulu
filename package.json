@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "git+https://github.com/elynnchen/gulu.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elynnchen/gulu.git"
+  },
   "keywords": [
     "vue",
     "ui"
@@ -18,9 +21,9 @@
   },
   "homepage": "https://github.com/elynnchen/gulu#readme",
   "dependencies": {
-    "vue": "^2.5.16",
+    "vue": "^2.5.17",
     "vue-hot-reload-api": "^2.3.0",
-    "yarn": "^1.7.0"
+    "yarn": "^1.10.1"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.0.0",
