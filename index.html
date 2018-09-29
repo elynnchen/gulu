@@ -9,7 +9,25 @@
 </head>
 <body>
 <div id="app">
+    <div class="gulu-box">
+        <p>popover</p>
+        <div class="box">
+            <we-popover position="top-left"  trigger="click">
+                <template slot="content" >
+                    我是TIPS内容
+                </template>
+                <button>向上弹出Tips</button>
+            </we-popover>
+            <we-popover position="top-left" trigger="hover" >
+                <template slot="content" >
+                    我是TIPS内容
+                </template>
+                <button>向上弹出Tips</button>
+            </we-popover>
 
+
+        </div>
+    </div>
     <div class="gulu-box">
         <p>按钮</p>
         <g-button icon="" :loading="loading1"  @click="loading1 = !loading1" >默认按钮</g-button>
