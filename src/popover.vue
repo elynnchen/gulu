@@ -21,18 +21,15 @@
 //通过绑定Ref事件判断是Click还是mouseenter
     mounted () {
       if(this.trigger ==='click'){
-        this.$refs.popover.addEventListener('click',this.onclick)
-        console.log('1')
-
+        this.$refs.popover.addEventListener('click',this.onClick)
       }else {
         this.$refs.popover.addEventListener('mouseenter',this.open)
         this.$refs.popover.addEventListener('mouseleave',this.close)
-        console.log('2')
       }
     },
     destroyed(){//通过绑定Ref事件判断是Click还是mouseenter
       if(this.trigger==='click'){
-        this.$refs.popover.removeEventListener('click',this.onclick)
+        this.$refs.popover.removeEventListener('click',this.onClick)
       }else {
         this.$refs.popover.removeEventListener('mouseenter',this.open)
         this.$refs.popover.removeEventListener('mouseleave',this.close)
@@ -44,12 +41,11 @@
             type:String,
           default:'top-left',
           validator(value){
-              return('top-left','top-center','top-right',
+              return['top-left','top-center','top-right',
                   'bottom-left','bottom-center','bottom-right',
                   'left-top','left-center','left-bottom',
-                  'right-top','right-center','right-bottom').indexOf(value)>=0
+                  'right-top','right-center','right-bottom'].indexOf(value)>=0
           }
-
         },
       trigger:{
           type:String,
@@ -58,20 +54,15 @@
             return['click','hover'].indexOf(value)>=0
         }
       }
-
     }
     ,
     methods:{
       onclick(e){
         if(this.$refs.anthor.contains(e.target)){
-
           if(this.visible===true){
               this.close()
-
           }
           else { this.open()
-
-
           }
         }
       },
